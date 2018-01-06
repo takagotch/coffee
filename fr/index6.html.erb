@@ -1,0 +1,8 @@
+<div id="canvas">
+  <% @blocks.each do |block| %>
+  <%= image_tag("rails.png",
+      data: { :"block-id" => block.id },
+      style: "left: #{block.x}px; top: #{block.y}px") %>
+  <% end %>
+</div>
+
